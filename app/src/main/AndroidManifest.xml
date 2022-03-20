@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Write_Out">
         <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity3"
             android:exported="false"
             android:label="@string/title_activity_main3"

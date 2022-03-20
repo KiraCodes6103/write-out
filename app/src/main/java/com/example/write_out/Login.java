@@ -64,4 +64,9 @@ public class Login extends AppCompatActivity {
         Intent intent = new Intent(this, Signup.class);
         startActivity(intent);
     }
+    public void openActivit(View v) {
+        Toast.makeText(this, "Opening ForgotPassword Page", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, ForgotPassword.class);
+        startActivity(intent);
+    }
 }
