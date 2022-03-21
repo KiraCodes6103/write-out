@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/My"
+        android:icon="@drawable/ic_baseline_person_pin_24"
+        android:title="My Articles" />
+
+    <item
+        android:id="@+id/Other"
+        android:icon="@drawable/ic_baseline_public_24"
+        android:title="Other’s Articles" />
+
+    <item
+        android:id="@+id/Favourites"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="Favourites" />
+
+</menu>
