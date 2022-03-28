@@ -10,13 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Write_Out">
         <activity
+            android:name=".NewAricle"
+            android:exported="false" />
+        <activity
             android:name=".BottomNav"
             android:exported="false"
-            android:label="@string/title_activity_bottom_nav" />
+            android:label="Write-Out" />
         <activity
             android:name=".ForgotPassword"
             android:exported="false" />
-
         <activity
             android:name=".Signup"
             android:exported="false"

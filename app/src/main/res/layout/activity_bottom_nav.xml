@@ -6,12 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".BottomNav">
 
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomnavigation"
         android:layout_width="match_parent"
-        android:layout_height="79dp"
+        android:layout_height="78dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="67dp"
-        android:layout_marginBottom="-4dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/bottom_nav_menu" />
+
+
+    <FrameLayout
+        android:id="@+id/FrameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomnavigation"
+        android:layout_marginBottom="0dp"
+        android:background="@color/cream"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="32dp"
+            android:layout_marginEnd="355dp"
+            android:clickable="true"
+            android:foregroundGravity="center_vertical"
+            android:onClick="NewArticle"
+            app:srcCompat="@android:drawable/ic_input_add" />
+    </FrameLayout>
+
+
 </RelativeLayout>
