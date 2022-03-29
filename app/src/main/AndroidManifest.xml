@@ -10,8 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Write_Out">
         <activity
-            android:name=".NewAricle"
+            android:name=".writing"
             android:exported="false" />
+        <activity
+            android:name=".NewAricle"
+            android:exported="false"
+            android:parentActivityName=".BottomNav" />
         <activity
             android:name=".BottomNav"
             android:exported="false"
