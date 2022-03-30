@@ -4,17 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cream"
     tools:context=".writing">
+
+    <EditText
+        android:id="@+id/body"
+        android:layout_width="344dp"
+        android:layout_height="441dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/text"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="....."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.602" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="297dp"
+        android:layout_height="77dp"
+        android:background="@drawable/text"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/body"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/body" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="148dp"
-        android:layout_height="80dp"
-        android:layout_marginBottom="140dp"
+        android:layout_width="113dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="178dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="55dp"
+        android:gravity="center"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/body"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
