@@ -18,6 +18,12 @@
         android:clickable="true"
         android:src="@android:drawable/ic_input_add"
         android:layout_margin="32dp" />
+    <view class="androidx.appcompat.app.AlertController$RecycleListView"
+        android:id = "@+id/recview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </view>
 
 
 </FrameLayout>
