@@ -25,10 +25,9 @@ public class MyProfile extends Fragment {
 
     private String mParam1;
     private String mParam2;
-    RecyclerView recyclerView;
-    DatabaseReference database;
 
-    ArrayList<RecyView> dataholder;
+
+    RecyclerView recview;
 
 
     public MyProfile() {
@@ -61,8 +60,10 @@ public class MyProfile extends Fragment {
                              Bundle savedInstanceState) {
 
         View view =  inflater.inflate(R.layout.fragment_my_profile, container, false);
-        recyclerView = view.findViewById(R.id.recview);
-        database = FirebaseDatabase.getInstance().getReference("Registered Users");
+        recview = (RecyclerView)view.findViewById(R.id.recview);
+        recview.setLayoutManager(new LinearLayoutManager(getContext()));
+
+
 
 
         return view;

@@ -50,9 +50,12 @@ public class writing extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                articles details = new articles(Title, Category, Body);
-                DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Articles");
-                reference.child(user.getUid()).setValue(details);
+                Toast.makeText(writing.this, "Submitted Successfully", Toast.LENGTH_SHORT).show();
+                HashMap<String ,Object> m=new HashMap<String, Object>();
+                m.put("Category", textView2.getText().toString());
+                m.put("Title", textView.getText().toString());
+                m.put("Body", editText.getText().toString());
+                FirebaseDatabase.getInstance().getReference("Articles").child(user.getUid()).push().setValue(m);
             }
         });
 

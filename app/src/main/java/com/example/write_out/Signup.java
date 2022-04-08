@@ -62,17 +62,11 @@ public class Signup extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     Toast.makeText(Signup.this, "successfully Signed-Up", Toast.LENGTH_SHORT).show();
                     FirebaseUser user = auth.getCurrentUser();
-                    ReadUser writeUserDetails = new ReadUser(name);
-                    DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Registered Users");
-                    reference.child(user.getUid()).setValue(writeUserDetails).addOnCompleteListener(new OnCompleteListener<Void>() {
-                        @Override
-                        public void onComplete(@NonNull Task<Void> task) {
-                            Toast.makeText(Signup.this, "Successfully Signed in", Toast.LENGTH_SHORT).show();
-                        }
-                    });
+
+                    }
 
 
-                }
+
                 else {
                     Toast.makeText(Signup.this, "Failed", Toast.LENGTH_SHORT).show();
                 }
