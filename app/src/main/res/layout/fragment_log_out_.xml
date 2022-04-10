@@ -31,7 +31,6 @@
             android:id="@+id/Yes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="yes"
             android:text="Yes"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

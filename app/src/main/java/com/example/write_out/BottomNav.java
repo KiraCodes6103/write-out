@@ -3,7 +3,6 @@ package com.example.write_out;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -15,7 +14,6 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class BottomNav extends AppCompatActivity {
     FirebaseAuth mFirebase;
-    TextView textView;
     ActivityBottomNavBinding binding;
 
     @Override
@@ -25,18 +23,17 @@ public class BottomNav extends AppCompatActivity {
 
     binding = ActivityBottomNavBinding.inflate(getLayoutInflater());
     setContentView(binding.getRoot());
-    replacefragment(new MyProfile());
+    replacefragment(new OtherArticle());
 
     binding.bottomnavigation.setOnItemSelectedListener(item -> {
         switch (item.getItemId()){
 
-            case R.id.My: replacefragment(new MyProfile());
+            case R.id.My: replacefragment(new OtherArticle());
                 break;
-            case R.id.Other: replacefragment(new OtherArticle());
+            case R.id.Other: replacefragment(new MyProfile());
                 break;
             case R.id.Favourites:  replacefragment(new Favourite());
                 break;
-            case R.id.Logout_Button: replacefragment(new LogOut_Fragment());
         }
 
         return  true;
@@ -54,6 +51,11 @@ public class BottomNav extends AppCompatActivity {
         Intent intent = new Intent(this, NewAricle.class);
         startActivity(intent);
 
+    }
+    public void logout(View view){
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(BottomNav.this, Login.class));
+        finish();
     }
 
 

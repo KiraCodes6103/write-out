@@ -15,10 +15,7 @@
         android:id="@+id/Favourites"
         android:icon="@drawable/ic_baseline_favorite_24"
         android:title="Favourites" />
-    <item
-        android:id="@+id/Logout_Button"
-        android:icon="@drawable/ic_baseline_power_settings_new_24"
-        android:title="LogOut"/>
+
 
 
 </menu>

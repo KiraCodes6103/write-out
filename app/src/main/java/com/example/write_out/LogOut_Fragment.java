@@ -1,26 +1,29 @@
 package com.example.write_out;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 
 public class LogOut_Fragment extends Fragment {
-    Button btn;
+
+    FirebaseAuth auth;
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
+
     private String mParam1;
     private String mParam2;
 
     public LogOut_Fragment() {
-        // Required empty public constructor
+
     }
 
 
@@ -48,8 +51,8 @@ public class LogOut_Fragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_log_out_, container, false);
-
     }
+
 
 
 }

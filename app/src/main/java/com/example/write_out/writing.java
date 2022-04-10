@@ -56,6 +56,7 @@ public class writing extends AppCompatActivity {
                 m.put("Title", textView.getText().toString());
                 m.put("Body", editText.getText().toString());
                 FirebaseDatabase.getInstance().getReference("Articles").child(user.getUid()).push().setValue(m);
+                FirebaseDatabase.getInstance().getReference().child("AllArticles").push().setValue(m);
             }
         });
 
