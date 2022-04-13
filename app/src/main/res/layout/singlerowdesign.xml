@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardElevation="8dp"
     app:cardCornerRadius="8dp"
+    android:background="@drawable/edit_text"
     android:layout_margin="16dp">
 
     <LinearLayout
@@ -80,5 +81,15 @@
 
         </LinearLayout>
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="330dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/blike">
+
+    </ImageView>
 
 </androidx.cardview.widget.CardView>

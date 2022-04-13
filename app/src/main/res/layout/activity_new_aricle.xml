@@ -5,18 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NewAricle"
-    android:background="@color/cream">
+    android:background="@color/purple">
 
     <ImageView
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="149dp"
+        android:background="@drawable/edit_text"
         android:layout_marginEnd="182dp"
         android:src="@drawable/icons"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/textView3"
@@ -25,7 +26,8 @@
         android:foregroundGravity="clip_horizontal"
         android:gravity="center_horizontal|top"
         android:text="COMPOSE A NEW ARTICLE"
-        android:textColor="@color/purple_700"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,9 +41,12 @@
         android:id="@+id/editTextTextPersonName"
         android:layout_width="305dp"
         android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+
         android:ems="10"
         android:textColor="@color/black"
-        android:hint="Article's Title"
+        android:background="@drawable/edit_text"
+        android:hint="   Article's Title"
         android:inputType="textPersonName"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,7 +60,7 @@
         android:id="@+id/spinner"
         android:layout_width="305dp"
         android:layout_height="60dp"
-        android:background="@color/cardview_shadow_start_color"
+        android:background="@drawable/edit_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.443"
@@ -83,7 +88,7 @@
         android:layout_width="307dp"
         android:layout_height="38dp"
         android:text="Choose a Category --"
-        android:textColor="@color/black"
+        android:textColor="@color/text"
         android:textSize="20sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -98,7 +103,7 @@
         android:layout_width="307dp"
         android:layout_height="38dp"
         android:text="Artical Title -- "
-        android:textColor="@color/black"
+        android:textColor="@color/text"
         android:textSize="20sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"

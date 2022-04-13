@@ -40,6 +40,7 @@
             android:textColor="#FCFDFD"
             android:textSize="40sp"
             android:textStyle="bold"
+            android:outlineAmbientShadowColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -50,35 +51,17 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp">
+            android:layout_marginTop="60dp">
 
             <EditText
                 android:id="@+id/email"
                 android:layout_width="371dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:background="@color/white"
-                android:hint="Enter your Email..."
+                android:background="@drawable/edit_text"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:hint="   Enter your Email..."
                 android:inputType="textEmailAddress"
-                android:paddingVertical="15dp"
-                android:paddingLeft="40dp"
-                android:textColor="#011057" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp">
-
-            <EditText
-                android:id="@+id/name"
-                android:layout_width="371dp"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:background="@color/white"
-                android:hint="Enter_your_Name..."
-                android:inputType="text"
                 android:paddingVertical="15dp"
                 android:paddingLeft="40dp"
                 android:textColor="#011057" />
@@ -95,8 +78,10 @@
                 android:layout_width="371dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:background="@color/white"
-                android:hint="Enter your Password..."
+                android:layout_marginTop="0dp"
+                android:background="@drawable/edit_text"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:hint="   Enter your Password..."
                 android:inputType="textPassword|text"
                 android:paddingVertical="15dp"
                 android:paddingLeft="40dp"

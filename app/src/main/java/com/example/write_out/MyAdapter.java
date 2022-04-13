@@ -3,6 +3,7 @@ package com.example.write_out;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -45,6 +46,7 @@ public class MyAdapter extends FirebaseRecyclerAdapter<model,MyAdapter.myviewhol
 
     public class myviewholder extends RecyclerView.ViewHolder{
         TextView topic, category, body;
+        ImageView img;
 
         public myviewholder(@NonNull View itemView) {
             super(itemView);

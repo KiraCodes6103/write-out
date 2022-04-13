@@ -25,6 +25,22 @@
         <entry key="..\:/android Studio/codes/Write_Out/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23645833333333333" />
         <entry key="..\:/android Studio/codes/Write_Out/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1045" />
         <entry key="..\:/android Studio/codes/Write_Out/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1045" />
+        <entry key="..\:/android Studio/codes/write-out/app/src/main/res/drawable/edit_text.xml" value="0.2425" />
+        <entry key="..\:/android Studio/codes/write-out/app/src/main/res/drawable/ic_baseline_person_pin_24.xml" value="0.2425" />
+        <entry key="..\:/android Studio/codes/write-out/app/src/main/res/drawable/ic_baseline_power_settings_new_24.xml" value="0.2425" />
+        <entry key="..\:/android Studio/codes/write-out/app/src/main/res/drawable/logout.xml" value="0.2425" />
+        <entry key="..\:/android Studio/codes/write-out/app/src/main/res/layout/activity_bottom_nav.xml" value="0.264" />
+        <entry key="..\:/android Studio/codes/write-out/app/src/main/res/layout/activity_forgot_password.xml" value="0.23645833333333333" />
+        <entry key="..\:/android Studio/codes/write-out/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/android Studio/codes/write-out/app/src/main/res/layout/activity_main2.xml" value="0.22826086956521738" />
+        <entry key="..\:/android Studio/codes/write-out/app/src/main/res/layout/activity_new_aricle.xml" value="0.23645833333333333" />
+        <entry key="..\:/android Studio/codes/write-out/app/src/main/res/layout/activity_writing.xml" value="0.17255434782608695" />
+        <entry key="..\:/android Studio/codes/write-out/app/src/main/res/layout/fragment_desc.xml" value="0.23645833333333333" />
+        <entry key="..\:/android Studio/codes/write-out/app/src/main/res/layout/fragment_favourite.xml" value="0.23645833333333333" />
+        <entry key="..\:/android Studio/codes/write-out/app/src/main/res/layout/fragment_my_profile.xml" value="0.11499493414387031" />
+        <entry key="..\:/android Studio/codes/write-out/app/src/main/res/layout/fragment_other_article.xml" value="0.23645833333333333" />
+        <entry key="..\:/android Studio/codes/write-out/app/src/main/res/layout/singlerowdesign.xml" value="0.22826086956521738" />
+        <entry key="..\:/android Studio/codes/write-out/app/src/main/res/menu/search.xml" value="0.23645833333333333" />
         <entry key="..\:/write-out-b41ed586c02076d3b250a2acbab2f7943b9d365e/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2295" />
         <entry key="..\:/write-out-b41ed586c02076d3b250a2acbab2f7943b9d365e/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.2295" />
         <entry key="..\:/write-out-b41ed586c02076d3b250a2acbab2f7943b9d365e/app/src/main/res/drawable/ic_baseline_person_pin_24.xml" value="0.2295" />
@@ -45,6 +61,9 @@
         <entry key="..\:/write-out-b41ed586c02076d3b250a2acbab2f7943b9d365e/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23645833333333333" />
       </map>
     </option>
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/logout.xml" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />

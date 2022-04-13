@@ -16,11 +16,15 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
 
 
 public class Signup extends AppCompatActivity {
      private EditText email2;
      private EditText password2;
+     private EditText name;
     private FirebaseAuth auth;
 
 
@@ -31,6 +35,7 @@ public class Signup extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         email2 = findViewById(R.id.email2);
         password2 = findViewById(R.id.password2);
+        name = findViewById(R.id.name2);
         Button signup = findViewById(R.id.signup);
         auth = FirebaseAuth.getInstance();
 
@@ -39,6 +44,7 @@ public class Signup extends AppCompatActivity {
             public void onClick(View view) {
                 String email1 = email2.getText().toString();
                 String password1 = password2.getText().toString();
+                String name1 = name.getText().toString();
                 if (TextUtils.isEmpty(email1) || TextUtils.isEmpty(password1))
                 {
                     Toast.makeText(Signup.this, "Error", Toast.LENGTH_SHORT).show();
@@ -57,6 +63,9 @@ public class Signup extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     Toast.makeText(Signup.this, "successfully Signed-Up", Toast.LENGTH_SHORT).show();
                     FirebaseUser user = auth.getCurrentUser();
+                    HashMap<String ,Object> m=new HashMap<String, Object>();
+                    m.put("Name", name.getText().toString());
+                    FirebaseDatabase.getInstance().getReference("Usernames").child(user.getUid()).push().setValue(m);
                     Intent intent = new Intent(Signup.this, Login.class);
                     Signup.this.startActivity(intent);
                     finish();

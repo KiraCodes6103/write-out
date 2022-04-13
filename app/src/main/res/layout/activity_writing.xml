@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cream"
+    android:background="@color/purple"
     tools:context=".writing">
 
     <EditText
@@ -15,7 +15,7 @@
         android:layout_marginTop="77dp"
         android:layout_marginEnd="31dp"
         android:layout_marginBottom="4dp"
-        android:background="@color/white"
+        android:background="@drawable/edit_text"
         android:ems="10"
         android:gravity="start"
         android:hint="....."
@@ -31,7 +31,7 @@
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="297dp"
         android:layout_height="77dp"
-        android:background="@color/white"
+        android:background="@drawable/edit_text"
         android:ems="10"
         android:gravity="center"
         android:inputType="textPersonName"
@@ -62,6 +62,7 @@
         android:layout_marginStart="178dp"
         android:layout_marginEnd="176dp"
         android:layout_marginBottom="55dp"
+        android:background="@drawable/edit_text"
         android:gravity="center"
         android:text="TextView"
         android:textSize="16sp"
