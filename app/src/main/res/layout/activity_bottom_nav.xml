@@ -22,23 +22,14 @@
         app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/bottom_nav_menu" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="65dp"
-        android:layout_height="59dp"
-        android:layout_marginLeft="350dp"
-        android:foregroundGravity="right"
-        android:onClick="logout"
-        app:srcCompat="@drawable/red"
-        android:background="@drawable/edit_text"/>
 
     <FrameLayout
         android:id="@+id/FrameContainer"
         android:layout_width="match_parent"
-        android:layout_height="770dp"
+        android:layout_height="match_parent"
         android:layout_above="@+id/bottomnavigation"
+        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginTop="40dp"
         android:background="@color/purple"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,17 +53,15 @@
 
     </FrameLayout>
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="267dp"
-        android:layout_height="80dp"
-        android:includeFontPadding="false"
-        android:paddingLeft="45dp"
-        android:paddingTop="12dp"
-        android:text="WRITE-OUT"
-        android:textColor="@color/white"
-        android:textSize="34sp"
-        android:textStyle="bold|italic" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="65dp"
+        android:layout_height="59dp"
+        android:layout_marginLeft="350dp"
+        android:background="@drawable/edit_text"
+        android:foregroundGravity="right"
+        android:onClick="logout"
+        app:srcCompat="@drawable/red" />
 
 
 </RelativeLayout>

@@ -82,14 +82,12 @@
         </LinearLayout>
     </LinearLayout>
 
-    <ImageView
+    <ImageButton
         android:id="@+id/like"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="330dp"
         android:layout_marginTop="25dp"
-        android:src="@drawable/blike">
-
-    </ImageView>
+        android:src="@drawable/blike"/>
 
 </androidx.cardview.widget.CardView>
