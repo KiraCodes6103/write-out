@@ -55,9 +55,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="65dp"
-        android:layout_height="59dp"
-        android:layout_marginLeft="350dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
         android:background="@drawable/edit_text"
         android:foregroundGravity="right"
         android:onClick="logout"

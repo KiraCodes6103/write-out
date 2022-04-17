@@ -10,8 +10,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 
 public class DescFragment extends Fragment {
+
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -29,6 +33,7 @@ public class DescFragment extends Fragment {
         this.Title = Title;
         this.Category = Category;
         this.Body = Body;
+
     }
 
 
@@ -54,10 +59,10 @@ public class DescFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_desc, container, false);
-
         TextView title = view.findViewById(R.id.TITLE);
         TextView category = view.findViewById(R.id.CATEGORY);
         TextView body = view.findViewById(R.id.BODY);
+
 
         title.setText(Title);
         category.setText(Category);

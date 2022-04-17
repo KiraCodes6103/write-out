@@ -35,4 +35,5 @@ public class model {
     public void setTitle(String title) {
         Title = title;
     }
+
 }

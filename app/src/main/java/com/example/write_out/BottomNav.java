@@ -6,7 +6,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,9 +30,12 @@ public class BottomNav extends AppCompatActivity {
     MyAdapter adapter;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
 
 
     binding = ActivityBottomNavBinding.inflate(getLayoutInflater());
@@ -69,6 +74,7 @@ public class BottomNav extends AppCompatActivity {
         startActivity(new Intent(BottomNav.this, Login.class));
         finish();
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

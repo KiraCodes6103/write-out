@@ -4,7 +4,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,7 +28,7 @@ public class MyAdapter extends FirebaseRecyclerAdapter<model,MyAdapter.myviewhol
         holder.topic.setText(model.getTitle());
         holder.category.setText(model.getCategory());
         holder.body.setText(model.getBody());
-        holder.topic.setOnClickListener(new View.OnClickListener() {
+        holder.ll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 AppCompatActivity activity = (AppCompatActivity) view.getContext();
@@ -45,8 +47,9 @@ public class MyAdapter extends FirebaseRecyclerAdapter<model,MyAdapter.myviewhol
     }
 
     public class myviewholder extends RecyclerView.ViewHolder{
-        TextView topic, category, body;
+        TextView topic, category, body, author;
         ImageView img;
+        LinearLayout ll;
 
         public myviewholder(@NonNull View itemView) {
             super(itemView);
@@ -54,6 +57,8 @@ public class MyAdapter extends FirebaseRecyclerAdapter<model,MyAdapter.myviewhol
             topic = itemView.findViewById(R.id.topic);
             category = itemView.findViewById(R.id.category);
             body = itemView.findViewById(R.id.body);
+            ll = itemView.findViewById(R.id.ll);
+
 
         }
     }
